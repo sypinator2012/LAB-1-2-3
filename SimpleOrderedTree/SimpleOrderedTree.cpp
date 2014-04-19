@@ -19,8 +19,6 @@ void addToTree(link& root,Item& i)
 void addToTree(link& root,std::wstring i,int g)
 {
 	Item temp;
-	if((i[0]>=L'à')&&(i[0]<='ÿ'))
-		i[0]+=(int)(L'À'-L'à');
 	temp.Name = i;
 	temp.Group = g;
 	if(root==NULL)
